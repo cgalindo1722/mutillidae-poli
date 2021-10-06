@@ -1,11 +1,29 @@
 
 <style>
 <!--
-	div.phpinfodisplay table
+	table
 	{
-	    table-layout: fixed;
+	    
 	    width: 95%;
 	}
+
+	div.phpinfodisplay{
+	font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+  background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+}
 -->
 </style>
 

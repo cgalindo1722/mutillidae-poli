@@ -15,7 +15,14 @@
 		echo $RequiredSoftwareHandler->getNoJSONAdviceBasedOnOperatingSystem();
 	}// end if
 ?>
-
+<center>
+<div style="background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none; page-title">
 <div style=" width: 750px; overflow: hidden;">
 <?php include_once (__ROOT__.'/includes/hints/hints-menu-wrapper.inc'); ?>
 <span style="float: right">
@@ -26,7 +33,10 @@
 </span>
 </div>
 
-<table style="margin:0px;margin-top:5px;">
+<table style="border: 1px solid gray;
+  padding: 8px;text-align: center;
+  text-transform: uppercase;
+  color: #0a0a0a;">
  	<tr>
 	    <td>
 			<a title="Usage Instructions" href="./index.php?page=documentation/usage-instructions.php">
@@ -83,3 +93,5 @@
 		</td>
 	</tr>
 </table>
+</div>
+</center>

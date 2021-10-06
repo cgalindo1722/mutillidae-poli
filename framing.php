@@ -1,16 +1,29 @@
-
+<center>
+<div style ="background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none; page-title">
 <script src="./javascript/follow-mouse.js"></script>
-<div class="page-title">Page Viewer</div>
+<div style ="background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none; page-title; page-title"><h1>Visor de páginas</h1></div>
 
 <?php include_once (__ROOT__.'/includes/back-button.inc');?>
 <?php include_once (__ROOT__.'/includes/hints/hints-menu-wrapper.inc'); ?>
 
 <table>
 	<tr>
-		<td colspan="2" class="form-header">Click on portion of picture to enlarge</td>
+		<td colspan="2" class="form-header">Haga clic en una parte de la imagen para ampliar</td>
 	</tr>
 	<tr><td></td></tr>
-	<tr><td>Starting with the mouse off of the picture, move the mouse over the picture, then click to enlarge a portion of the picture.</td></tr>
+	<tr><td>Comenzando con el mouse fuera de la imagen, mueva el mouse sobre la imagen, luego haga clic para ampliar una parte de la imagen.</td></tr>
 </table>
 
 <iframe
@@ -31,4 +44,5 @@ Giant Invisible Click-Jacking Button
 <script>
 	objHoverDiv = document.getElementById('id-hover-div');
 </script>
-	
+</div>
+</center>

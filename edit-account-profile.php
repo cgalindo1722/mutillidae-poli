@@ -1,3 +1,10 @@
+<div style ="background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none; page-title"> 
 <?php
     require_once (__ROOT__.'/classes/CSRFTokenHandler.php');
     $lCSRFTokenHandler = new CSRFTokenHandler("owasp-esapi-php/src/", $_SESSION["security-level"], "edit-account-profile");
@@ -43,8 +50,14 @@
     $lNewCSRFTokenForNextRequest = $lCSRFTokenHandler->generateCSRFToken();
     $lFormSubmitted = isset($_REQUEST["edit-account-profile-php-submit-button"]);
 ?>
-
-<div class="page-title">Edit Profile</div>
+<center>
+<div style ="background-color:#6495ed;background-color:#b0c4de; background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none; page-title"><h1>Editar Perfil</h1></div>
 
 <?php include_once (__ROOT__.'/includes/back-button.inc');?>
 <?php include_once (__ROOT__.'/includes/hints/hints-menu-wrapper.inc'); ?>
@@ -203,12 +216,13 @@
 </script>
 
 <span>
+
 	<a style="text-decoration: none; cursor: pointer;" href="./webservices/rest/ws-user-account.php">
-		<img style="vertical-align: middle;" src="./images/ajax_logo-75-79.jpg" height="75px" width="78px" />
-		<span style="font-weight:bold;">Switch to RESTful Web Service Version of this Page</span>
+		<img style="vertical-align: middle;" src="./images/Ajax1.png" height="75px" width="78px" />
+		<span style="font-weight:bold;">Cambiar a la versión de servicio web RESTful de esta página</span>
 	</a>
 </span>
-
+<br>
 <div id="id-edit-account-profile-form-div" style="display: hidden;">
 	<form	action="index.php?page=edit-account-profile.php" method="post" enctype="application/x-www-form-urlencoded"
 			onsubmit="return onSubmitOfForm(this);"
@@ -221,7 +235,7 @@
 			</tr>
 			<tr><td>&nbsp;</td></tr>
 			<tr>
-				<td class="label">Username</td>
+				<td class="label">Usuario</td>
 				<td>
 					<input type="text" name="username" size="15" autofocus="autofocus"
 						<?php
@@ -287,18 +301,48 @@
 <div id="id-profile-not-found-div" style="text-align: center; display: none;">
 	<table>
 		<tr>
-			<td class="label">User profile not found. You may <a href="index.php?page=login.php">login here</a></td>
+			<td style = "color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;">No se encontró el perfil de usuario. <a href="index.php?page=login.php">Entre aquí</a></td>
 		</tr>
 		<tr><td></td></tr>
 		<tr><td></td></tr>
 		<tr>
-			<td style="text-align:center; font-style: italic;">
-				Dont have an account? <a href="index.php?page=register.php">Please register here</a>
+			<td style="text-align:center; font-style: italic;
+			color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;">
+				¿No tienes una cuenta? <a href="index.php?page=register.php">Regístrese aquí</a>
 			</td>
 		</tr>
 	</table>	
 </div>
-
+</center>
+<br>
+<br>
+<br>
 <script>
 	var lResultsFound = <?php echo $lResultsFound?"true":"false"; ?>;
 	if (lResultsFound){
@@ -315,3 +359,4 @@
 		echo $lCSRFTokenHandler->generateCSRFHTMLReport();
 	}// end if
 ?>
+</div>
